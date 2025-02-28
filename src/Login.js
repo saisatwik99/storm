@@ -1,23 +1,24 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+const USERS = [
+  { username: "Uniconnect", password: "Uniconnect" },
+  { username: "user2", password: "password2" },
+  { username: "admin", password: "admin123" }
+];
+
 const Login = () => {
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    const users = process.env.REACT_APP_USERS.split(',').map(user => {
-      const [userEmail, userPassword] = user.split(':');
-      return { email: userEmail, password: userPassword };
-    });
-
-    const user = users.find(user => user.email === email && user.password === password);
+    const user = USERS.find(user => user.username === username && user.password === password);
 
     if (user) {
       navigate('/app');
     } else {
-      alert('Invalid email or password');
+      alert('Invalid username or password');
     }
   };
 
@@ -28,10 +29,10 @@ const Login = () => {
       </div>
       
       <input
-        type="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
+        type="text"
+        placeholder="Username"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
         style={styles.input}
       />
       <input

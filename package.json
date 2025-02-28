@@ -1,5 +1,5 @@
 {
-  "homepage": "http://saisatwik99.github.io/storm",
+  "homepage": "http://abhijit-23blaze.github.io/storm",
   "name": "storm",
   "version": "0.1.0",
   "private": true,
@@ -56,6 +56,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.2.0"
+    "gh-pages": "^6.3.0"
   }
 }
