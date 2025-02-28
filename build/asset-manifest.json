@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/storm/static/css/main.78727b32.css",
-    "main.js": "/storm/static/js/main.7bfa0dc8.js",
+    "main.js": "/storm/static/js/main.8d772c56.js",
     "index.html": "/storm/index.html",
     "main.78727b32.css.map": "/storm/static/css/main.78727b32.css.map",
-    "main.7bfa0dc8.js.map": "/storm/static/js/main.7bfa0dc8.js.map"
+    "main.8d772c56.js.map": "/storm/static/js/main.8d772c56.js.map"
   },
   "entrypoints": [
     "static/css/main.78727b32.css",
-    "static/js/main.7bfa0dc8.js"
+    "static/js/main.8d772c56.js"
   ]
 }
